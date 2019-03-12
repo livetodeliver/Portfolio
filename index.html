@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Stacy Grimes | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fauna+One|Roboto|Playfair+Display" rel="stylesheet">
 </head>
 <body>
     <nav role="navigation">
-        <ul>
-            <li>Stacy Grimes</li>
-            <li><img class="hamburger" src="hamburger.png" alt="menu icon"></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+        <h1 class="name">Stacy Grimes</h1><img class="hamburger" src="img/hamburger.png" alt="menu icon"></li>
+            <ul class="nav-bar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main role="main">
         <header role="banner">
-            <h1>Hi, I’m Stacy. I’m a web developer who loves clean code and creative problem-solving. </h1>
-            <img class="skyline" src="file:///Users/stacygrimes/Documents/Thinkful/Portfolio/skyline.jpg" alt="Nightime view of the Philadelphia skyline and the river."/>
+            <h1><span>Hi, I&rsquo;m Stacy.</span> I&rsquo;m a Philly based web developer with a passion for dynamic UX design, and using creative approaches to solving tough problems. </h1>
         </header>
 
         <section id="about">
-            <h2>A little about me.</h2>
-            <p>Before the days of Facebook, HTML5, and even MySpace, my dad’s passion for computers became contagious and as a preteen I began creating my own websites.  I used it as a way to connect with the world far beyond my bedroom walls. Now, many years later, I have resparked that adolescent fire I had for web development and have found myself drawn back to coding as a place where my passion for learning something new is constantly fed.</p> 
-            <p>When not tapping away at computer keys I can be found doing a myriad of activities such as  “Bookstagramming,” learning pointed pen calligraphy, artisan soapmaking, vegan cooking, snuggling with my furry family (2 dogs, 3 cats), and maybe even doing something physical like a long bike ride, or a rowing class.</p>
+            <h2>A little bit about me.</h2>
+            <div class="full-width">
+                <div class='about-width'>
+                    <p>Before the days of Facebook, HTML5, and even MySpace, my dad&rsquo;s passion for computers became contagious and as a pre-teen I began creating my own websites.  I used it as a way to connect with the world far beyond my bedroom walls. Now, many years later, I have resparked that adolescent fire I had for web development and have found myself drawn back to coding as a place where my passion for learning something new is constantly fed.</p>
+                    <p>I'm searching for a thriving workplace where I can bring my positive energy, knowledge and skills to a strong and diverse team.  I would love to be in a environment that encourages authenticity, learning, and growth.</p>
+                </div>
+                <div class='about-width'>
+                    <p>When not tapping away at computer keys I can be found doing a myriad of activities such as  “Bookstagramming,” learning pointed pen calligraphy, artisan soapmaking, vegan cooking, snuggling with my furry family (2 dogs, 3 cats), and maybe even doing something physical like a long bike ride, or a rowing class.</p>
+                    <p>I am also in love with <a href="https://twitter.com/GrittyNHL">Gritty</a>, The Philadelphia Flyers mascot, and you probably should be, too. </p>
+                </div>  
+            </div>
         </section>
 
         <section id="projects">
@@ -36,21 +43,32 @@
         
               <p>A 10-question test of knowledge about the Harry Potter book and film series, (featuring some of the best HP GIFs the internet has to offer).</p>
               <p>Technologies used: HTML, CSS, Javascript, jQuery, Flexbox</p>
-              <a href="https://livetodeliver.github.io/HPQuizApp/">Live App</a>
-              <a href="https://github.com/livetodeliver/HPQuizApp">GitHub Repo</a>
+              <p><a href="https://livetodeliver.github.io/HPQuizApp/">Live App</a> | <a href="https://github.com/livetodeliver/HPQuizApp">GitHub Repo</a></p>
+             
               <div class="hpCapture">
-              <img alt="Screen capture of Harry Potter Quiz App first page" src="HPQuizCapture.png"/>
+              <img alt="Screen capture of Harry Potter Quiz App first page" src="img/HPQuizCapture.png"/>
               </div>
             </section>
+        <section class="VFPHL">
+            <h3>Vegan-Friendly PHL App</h3>
+            <p>This app utilizes the VegGuide.org Rest API, Google Maps API, and Google Places API to find vegan and vegan-friendly restaurant locations within the Philadelphia area. Users have the ability to select certain search paramaters to filter results, and then are given a map that can display the location for a selected result entry. Users may choose to search by distance based on a given address, by selected neighbhorhood from a dropdown menu, or simply just do a blanket search for any vegan-friendly restaurants in Philadelphia that meet their other selected criteria.</p>
+            <p><a href="https://livetodeliver.github.io/VFPHL/">Live App</a> | <a href="https://github.com/livetodeliver/VFPHL">GitHub Repo</a></p>
+            <div class="vfphlCapture">
+            <img alt="Screen capture of VFPHL App landing page and search navigation" src="https://livetodeliver.github.io/VFPHL/ScreenShot1.png"/>
+            </div>
+        
+        </section>
 
         <section id="contact">
             <h3>Like what you see?</h3>
             <ul>
-                <li><a href="mailto:livetodeliver1@gmail.com">Email</a></li>
-                <li><a href="https://github.com/livetodeliver">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/stacy-grimes-a471b916/">LinkedIn</a></li>
+                <li><a href="mailto:livetodeliver1@gmail.com"><img src="img/icon-envelope.png" alt="Small envelope"></a></li>
+                <li><a href="https://github.com/livetodeliver"><img src="img/icon-github.png" alt="Github cat outline icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/stacy-grimes-a471b916/"><img src="img/icon-linkedin.png" alt="LinkedIn logo"></a></li>
             </ul>
         </section>
     </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

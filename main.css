@@ -1,62 +1,272 @@
 * {
     box-sizing: border-box;
   }
-  
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    }
+
   body {
-    font-family: "Open Sans", sans-serif; 
+    font-family: 'Roboto', serif;
     font-size: 20px;
     color: #444;
     text-align: center;
     line-height: 1.5;
   }
 
-  nav,
-  footer {
-    background-color: #aaa;
+  section {
+    padding: 6% 0;
+    background-color: #bbb;
+    padding-left: 6%;
+    padding-right: 6%;
   }
-  
-  
-  nav {
+
+/* Nav */
+ 
+ nav {
+    background-color: #575BAA;
+    color: #ECECEC;
+    font-family: 'Fauna One', serif;
+    font-size: 18px;
     position: fixed;
+    padding-bottom: 10px;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
+    border-bottom: white solid 5px;
   }
 
-  ul {
+  a:link {
+      text-decoration: none;
+      color: #ECECEC;
+  }
+
+  p > a:link {
+      color: #3F427C;
+  }
+
+  p > a:visited {
+      color: black;
+  }
+
+  a:visited {
+      color: #ECECEC;
+  }
+
+a:hover {
+      font-style: italic;
+      font-size: 20px;
+}
+
+.name {
+      font-family: 'Fauna One', serif;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+}
+
+ul {
     list-style-type: none;
-    margin: 0;
+    text-align: center;
     padding: 0;
-  }
-  
-  .hamburger {
-      width: 35px;
+    margin: 0 auto;
+}
+
+/*** HEADER ***/
+header {
+    padding-left: 12%;
+    padding-right: 12%; 
+    padding-bottom: 4%;
+    padding-top: 12%;
+    background-image: url('./img/skyline.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
     }
-  
-  header {
-    padding: 12% 0;
-  }
-  
-  .skyline {
-      width: 50%;
-  }
-  
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
 
-  .hpCapture > img {
-    width: 30%;
-  }
+h1 {
+    font-size: 28px;
+    color: white;
+}
 
-  #contact {
+h2 {
+    font-size: 24px;
+}
 
-  }
+h3 {
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Fauna One', serif;
+}
+
+p {
+    font-size: 18px;
+}
+
   
+  /*** ABOUT ****/
+
+#about {
+    background-color: #575BAA;
+    color: #ECECEC;
+    text-align: left;
+}
+
+h1 > span {
+      font-weight: lighter;
+      font-style: italic;
+}
+
+.full-width {
+     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between; 
+}
+
+.about-width {
+      width: 600px;
+      padding-left: 20px;
+      padding-right: 20px;
+}
+
+/*** PROJECTS ***/
+
+ #projects {
+    background-color: white;
+    padding-top: 0;
+    color: #575BAA;
+    height: 50px;
+    text-align: left;
+ }
+
+ .hpQuizApp {
+    background-color: white;
+    color: #575BAA;
+    padding-top: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+ }
+
+ .VFPHL {
+    background-color: white;
+    color: #575BAA;
+    padding-top: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+ }
+
+ .hpQuizApp > h3, p {
+     text-align: left;
+ }
+
+ .VFPHL > h3, p {
+    text-align: left;
+}
+
+.hpCapture > img {
+    width: 60%;
+    margin: auto;
+}
+
+.vfphlCapture > img {
+    width: 60%;
+    margin: auto;
+}
+
+  /*** CONTACT ***/
+
+#contact {
+    background-color: #575BAA;
+    color: #ECECEC;
+    padding-top: 2%;
+}
+
+#contact > ul {
+    padding-top: 0;
+}
+
+#contact > ul > li {
+    display: inline-block;
+}
+
+ul > li > a > img {
+      width: 20px;
+}
+   
+@media screen and (min-width: 1000px) {
+    nav > ul,
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    nav > ul {
+        flex-grow: 1;
+    }
+    nav > ul > li {
+        margin-left: 40px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .name {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hamburger {
+        width: 35px; 
+        line-height: 1;
+        position: relative;
+        top: 9px;
+        margin-left: 9px;
+    }
+
+    nav > ul > li > a {
+    display: block;
+    border: solid 1px white;
+    padding: 5px;
+    }
+    
+    .name {
+    display: inline-block;
+    }
+
+    .nav-bar {
+        display: none;
+        padding-left: 0;
+    }
+
+    .nav-bar.active {
+        display: block;
+    }
+
+    nav > ul > li  {
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+}
