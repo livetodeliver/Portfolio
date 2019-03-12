@@ -142,7 +142,15 @@ h1 > span {
     text-align: left;
  }
 
- .hpQuizApp {
+  .hpQuizApp {
+    background-color: white;
+    color: #575BAA;
+    padding-top: 0;
+    margin-left: 6%;
+    margin-right: 6%;
+ }
+
+ .VFPHL {
     background-color: white;
     color: #575BAA;
     padding-top: 0;
@@ -154,8 +162,17 @@ h1 > span {
      text-align: left;
  }
 
+ .VFPHL > h3, p {
+    text-align: left;
+}
+
 .hpCapture > img {
-    width: 300px;
+    width: 60%;
+    margin: auto;
+}
+
+.vfphlCapture > img {
+    width: 60%;
     margin: auto;
 }
 
