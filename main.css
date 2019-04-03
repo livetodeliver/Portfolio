@@ -63,6 +63,10 @@ a:hover {
       font-size: 20px;
 }
 
+#gritty:hover {
+    color: orange;
+}
+
 .name {
       font-family: 'Fauna One', serif;
       font-size: 30px;
@@ -78,7 +82,7 @@ ul {
 }
 
 /*** HEADER ***/
-header {
+.module {
     padding-left: 12%;
     padding-right: 12%; 
     padding-bottom: 4%;
@@ -86,12 +90,18 @@ header {
     background-image: url('./img/skyline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -200px;
-    }
+    background-position-y: -300px;
+    
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 h1 {
     font-size: 28px;
     color: white;
+    
 }
 
 h2 {
@@ -266,7 +276,12 @@ ul > li > a > img {
         width: 80%;
     }
 
+    .module {
+        background-position-y: center;
+    }
+
     main {
         padding-top: 50px;
     }
+
 }
