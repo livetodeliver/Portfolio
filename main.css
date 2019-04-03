@@ -83,21 +83,15 @@ header {
     padding-right: 12%; 
     padding-bottom: 4%;
     padding-top: 12%;
-<<<<<<< HEAD
     background-image: url('./img/skyline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -200px;
-=======
->>>>>>> 97c056d2035198be35cb9e9f7fd23b5a70ba18a3
     }
 
 h1 {
     font-size: 28px;
-<<<<<<< HEAD
     color: white;
-=======
->>>>>>> 97c056d2035198be35cb9e9f7fd23b5a70ba18a3
 }
 
 h2 {
@@ -153,11 +147,7 @@ h1 > span {
     text-align: left;
  }
 
-<<<<<<< HEAD
- .hpQuizApp {
-=======
   .hpQuizApp {
->>>>>>> 97c056d2035198be35cb9e9f7fd23b5a70ba18a3
     background-color: white;
     color: #575BAA;
     padding-top: 0;
@@ -279,8 +269,4 @@ ul > li > a > img {
     main {
         padding-top: 50px;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 97c056d2035198be35cb9e9f7fd23b5a70ba18a3
