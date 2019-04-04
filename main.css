@@ -82,26 +82,29 @@ ul {
 }
 
 /*** HEADER ***/
-.module {
-    padding-left: 12%;
-    padding-right: 12%; 
-    padding-bottom: 4%;
-    padding-top: 12%;
+
+.bg-image {
+    height: 400px;
     background-image: url('./img/skyline.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -300px;
-    
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.5);
+.bg-text {
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+  background-position-y: center;
+  color: white;
+  position: absolute;
+  top: 20%;
+  
 }
 
 h1 {
     font-size: 28px;
-    color: white;
-    
+    color: white; 
 }
 
 h2 {
@@ -276,7 +279,7 @@ ul > li > a > img {
         width: 80%;
     }
 
-    .module {
+    .bg-image {
         background-position-y: center;
     }
 
