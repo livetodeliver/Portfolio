@@ -47,11 +47,11 @@
   }
 
   p > a:link {
-      color: #3F427C;
+      color: orange;
   }
 
   p > a:visited {
-      color: black;
+      color: orange;
   }
 
   a:visited {
@@ -60,11 +60,6 @@
 
 a:hover {
       font-style: italic;
-      font-size: 20px;
-}
-
-#gritty:hover {
-    color: orange;
 }
 
 .name {
@@ -148,6 +143,10 @@ h1 > span {
       width: 600px;
       padding-left: 20px;
       padding-right: 20px;
+}
+
+p > span {
+    font-style: italic;
 }
 
 /*** PROJECTS ***/
